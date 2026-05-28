@@ -425,10 +425,20 @@ const IMGS = {
   image16_jpeg: "images/image16.jpeg",
   image17_jpeg: "images/image17.jpeg",
   image18_jpeg: "images/image18.jpeg",
-  image19_jpeg: "images/image19.jpeg"
+  image19_jpeg: "images/image19.jpeg",
+  image20_jpeg: "images/image20.jpeg",
+  image21_jpeg: "images/image21.jpeg",
+  image22_jpeg: "images/image22.jpeg"
 };
 
-const EVENTS_RAW = [{"id": "e1", "date": "2024年3月10日", "title": "第11届奥斯卡人权颁奖", "location": "洛杉矶", "category": "人权颁奖", "desc": "第十一届海外华人奥斯卡人权颁奖典礼隆重举行，表彰在民主、自由与人权领域作出杰出贡献的个人与团体。", "images": ["image1.jpeg", "image2.jpeg", "image3.jpeg", "image4.jpeg", "image5.png"], "imgs_safe": ["image1_jpeg", "image2_jpeg", "image3_jpeg", "image4_jpeg", "image5_png"]}, {"id": "e2", "date": "2024年5月18日", "title": "海滩纪念六四35周年", "location": "洛杉矶海滩", "category": "六四纪念", "desc": "在海滩举行的六四35周年纪念活动，以烛光与鲜花悼念1989年天安门事件中的遇难者，呼吁中共当局正视历史。", "images": ["image6.jpeg", "image7.jpeg"], "imgs_safe": ["image6_jpeg", "image7_jpeg"]}, {"id": "e3", "date": "2024年6月2日", "title": "自由雕塑公园六四35周年纪念", "location": "自由雕塑公园", "category": "六四纪念", "desc": "在自由雕塑公园举行的六四35周年纪念活动，各界民主人士汇聚一堂，共同追思遇难者、倡导民主自由。", "images": ["image8.jpeg", "image9.jpeg", "image10.jpeg", "image11.jpeg", "image12.png", "image13.png", "image14.png"], "imgs_safe": ["image8_jpeg", "image9_jpeg", "image10_jpeg", "image11_jpeg", "image12_png", "image13_png", "image14_png"]}, {"id": "e4", "date": "2024年8月25日", "title": "中国民主党反共座谈会", "location": "圣盖博希尔顿酒店", "category": "座谈论坛", "desc": "参加中国民主党创党元老朱虞夫主持的反共座谈会，各方民主人士深入探讨推进中国民主化的战略与路径。", "images": ["image15.png", "image16.jpeg", "image17.jpeg"], "link": "https://www.ntdtv.com/b5/2024/08/27/a103908597.html", "link_text": "新唐人新闻报道", "imgs_safe": ["image15_png", "image16_jpeg", "image17_jpeg"]}, {"id": "e5", "date": "2025年3月2日", "title": "第12届奥斯卡人权颁奖", "location": "洛杉矶", "category": "人权颁奖", "desc": "第十二届海外华人奥斯卡人权颁奖典礼，继续表彰在推动中国民主与人权事业中英勇无畏的倡导者与活动人士。", "images": ["image18.jpeg", "image19.jpeg"], "imgs_safe": ["image18_jpeg", "image19_jpeg"]}];
+const EVENTS_RAW = [
+  {"id": "e1", "date": "2024年3月10日", "title": "第11届奥斯卡人权颁奖", "location": "洛杉矶", "category": "人权颁奖", "desc": "第十一届海外华人奥斯卡人权颁奖典礼隆重举行，表彰在民主、自由与人权领域作出杰出贡献的个人与团体。", "images": ["image1.jpeg", "image2.jpeg", "image3.jpeg", "image4.jpeg", "image5.png"], "imgs_safe": ["image1_jpeg", "image2_jpeg", "image3_jpeg", "image4_jpeg", "image5_png"]},
+  {"id": "e2", "date": "2024年5月18日", "title": "海滩纪念六四35周年", "location": "洛杉矶海滩", "category": "六四纪念", "desc": "在海滩举行的六四35周年纪念活动，以烛光与鲜花悼念1989年天安门事件中的遇难者，呼吁中共当局正视历史。", "images": ["image6.jpeg", "image7.jpeg"], "imgs_safe": ["image6_jpeg", "image7_jpeg"]},
+  {"id": "e3", "date": "2024年6月2日", "title": "自由雕塑公园六四35周年纪念", "location": "自由雕塑公园", "category": "六四纪念", "desc": "在自由雕塑公园举行的六四35周年纪念活动，各界民主人士汇聚一堂，共同追思遇难者、倡导民主自由。", "images": ["image8.jpeg", "image9.jpeg", "image10.jpeg", "image11.jpeg", "image12.png", "image13.png", "image14.png"], "imgs_safe": ["image8_jpeg", "image9_jpeg", "image10_jpeg", "image11_jpeg", "image12_png", "image13_png", "image14_png"]},
+  {"id": "e4", "date": "2024年8月25日", "title": "中国民主党反共座谈会", "location": "圣盖博希尔顿酒店", "category": "座谈论坛", "desc": "参加中国民主党创党元老朱虞夫主持的反共座谈会，各方民主人士深入探讨推进中国民主化的战略与路径。", "images": ["image15.png", "image16.jpeg", "image17.jpeg"], "link": "https://www.ntdtv.com/b5/2024/08/27/a103908597.html", "link_text": "新唐人新闻报道", "imgs_safe": ["image15_png", "image16_jpeg", "image17_jpeg"]},
+  {"id": "e5", "date": "2025年3月2日", "title": "第12届奥斯卡人权颁奖", "location": "洛杉矶", "category": "人权颁奖", "desc": "第十二届海外华人奥斯卡人权颁奖典礼，继续表彰在推动中国民主与人权事业中英勇无畏的倡导者与活动人士。", "images": ["image18.jpeg", "image19.jpeg"], "imgs_safe": ["image18_jpeg", "image19_jpeg"]},
+  {"id": "e6", "date": "2026年4月4日", "title": "高智晟雕塑落成仪式", "location": "加州自由雕塑公园", "category": "人物纪念", "desc": "2026年4月4日，我和华夏公民自由联盟的新老成员，以及朋友一同参加了加州自由雕塑公园举办的“高智晟雕塑落成仪式”。我希望通过参加此次活动，让更多的人了解维权律师高智晟的遭遇，以及中国政府长期对高智晟秘密抓捕的事实。我更希望有更多的律师和民众能够勇敢的站出来，共同去反对中国政府的暴政。", "images": ["image20.jpeg", "image21.jpeg", "image22.jpeg"], "imgs_safe": ["image20_jpeg", "image21_jpeg", "image22_jpeg"]}
+];
 
 // Attach safe image keys
 const EVENTS = EVENTS_RAW.map(e => ({...e, imgs: e.imgs_safe || []}));
@@ -520,6 +530,7 @@ function renderActivityList(){
     "人权颁奖": '<span class="tag tag-blue">🏆 人权颁奖</span>',
     "六四纪念": '<span class="tag tag-red">🕯 六四纪念</span>',
     "座谈论坛": '<span class="tag tag-amber">🎤 座谈论坛</span>',
+    "人物纪念": '<span class="tag tag-blue">🗿 人物纪念</span>',
   };
   container.innerHTML = EVENTS.map((e,i) => {
     const firstImg = e.imgs[0] ? IMGS[e.imgs[0]] : '';
