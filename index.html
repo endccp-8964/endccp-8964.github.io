@@ -196,6 +196,27 @@ body{background:linear-gradient(180deg,#EAF6FF 0%,#F8FCFF 46%,#EAF6FF 100%)}
 .home-hero .hstat-lbl{font-size:13px;margin-top:7px;color:#E2E8F0}
 .sec-title{font-size:22px;color:#0F172A;margin:34px 0 22px;padding-bottom:16px;border-bottom:1px solid rgba(15,23,42,.18)}
 .sec-title .ico{font-size:20px;color:#2563EB}
+
+.activity-banner{position:relative;display:grid;grid-template-columns:1.15fr .85fr;min-height:360px;margin:0 0 40px;border-radius:28px;overflow:hidden;background:#07111F;border:1px solid rgba(15,23,42,.12);box-shadow:0 24px 80px rgba(15,23,42,.18)}
+.banner-media{position:relative;min-height:360px;background:#0B1220;overflow:hidden}
+.banner-media::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(7,17,31,.18),rgba(7,17,31,.68))}
+.banner-media img{width:100%;height:100%;object-fit:cover;display:block;transform:scale(1.01);transition:opacity .45s ease,transform .7s ease}
+.activity-banner.is-changing .banner-media img{opacity:.35;transform:scale(1.045)}
+.banner-content{position:relative;z-index:1;padding:42px 46px;display:flex;flex-direction:column;justify-content:center;background:linear-gradient(135deg,#07111F 0%,#0F2554 100%)}
+.banner-kicker{align-self:flex-start;margin-bottom:16px;padding:7px 14px;border-radius:999px;border:1px solid rgba(248,113,113,.55);background:rgba(239,68,68,.14);color:#FECACA;font-size:13px;font-weight:650;letter-spacing:.04em}
+.banner-content h2{font-size:34px;line-height:1.18;color:#F8FAFC;margin:0 0 14px;letter-spacing:0}
+.banner-meta{font-size:14px;color:#BFDBFE;margin-bottom:18px}
+.banner-content p{font-size:15px;line-height:1.9;color:#CBD5E1;margin:0 0 26px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.banner-actions{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-top:auto}
+.banner-cta{border:none;background:#EF4444;color:#fff;border-radius:12px;padding:12px 20px;font-size:14px;font-weight:700;cursor:pointer;font-family:inherit;box-shadow:0 12px 30px rgba(239,68,68,.24);transition:transform .2s,background .2s}
+.banner-cta:hover{background:#DC2626;transform:translateY(-1px)}
+.banner-controls{display:flex;gap:10px}
+.banner-nav{width:42px;height:42px;border-radius:50%;border:1px solid rgba(148,163,184,.34);background:rgba(15,23,42,.56);color:#E2E8F0;font-size:26px;line-height:1;cursor:pointer;transition:background .2s,border-color .2s}
+.banner-nav:hover{background:rgba(30,64,175,.7);border-color:#60A5FA}
+.banner-dots{display:flex;gap:9px;margin-top:26px}
+.banner-dot{width:34px;height:4px;border:none;border-radius:999px;background:rgba(148,163,184,.38);cursor:pointer;padding:0;transition:width .2s,background .2s}
+.banner-dot.active{width:52px;background:#FCA5A5}
+
 .act-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
 .act-card{min-height:228px;border-radius:22px;background:#0B1220;border-color:rgba(15,23,42,.12);box-shadow:0 18px 55px rgba(15,23,42,.14);transform:translateY(0)}
 .act-card:hover{transform:translateY(-4px);box-shadow:0 24px 70px rgba(30,58,138,.22)}
@@ -210,8 +231,8 @@ body{background:linear-gradient(180deg,#EAF6FF 0%,#F8FCFF 46%,#EAF6FF 100%)}
 .gallery-hero{height:540px;border-radius:24px;box-shadow:0 22px 70px rgba(15,23,42,.18)}
 .detail-card,.form-card,.upcoming-wrap{border-radius:22px;box-shadow:0 16px 48px rgba(15,23,42,.12)}
 .contact-grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:18px}
-@media(max-width:980px){.page{padding:30px 24px 70px}.home-hero{min-height:470px;padding:64px 42px}.home-hero .hero-h{font-size:46px}.home-hero .hero-stats{grid-template-columns:repeat(2,minmax(0,1fr))}.act-list{grid-template-columns:1fr}.contact-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
-@media(max-width:640px){.site-header{padding:12px 16px}.page{padding:24px 16px 56px}.home-hero{min-height:420px;padding:42px 24px;border-radius:22px}.home-hero .hero-h{font-size:34px}.home-hero .hero-p{font-size:15px}.home-hero .hero-stats{gap:12px}.home-hero .hero-stats>div{padding:16px}.act-card{min-height:0}.act-thumb{width:108px;min-width:108px}.act-body{padding:18px 16px}.act-title{font-size:16px}.act-meta,.act-desc{font-size:12px}.contact-grid{grid-template-columns:1fr}.gallery-hero{height:260px}}
+@media(max-width:980px){.activity-banner{grid-template-columns:1fr}.banner-media{min-height:300px}.banner-content{padding:34px}.page{padding:30px 24px 70px}.home-hero{min-height:470px;padding:64px 42px}.home-hero .hero-h{font-size:46px}.home-hero .hero-stats{grid-template-columns:repeat(2,minmax(0,1fr))}.act-list{grid-template-columns:1fr}.contact-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:640px){.activity-banner{border-radius:22px;margin-bottom:32px}.banner-media{min-height:220px}.banner-content{padding:26px 22px}.banner-content h2{font-size:24px}.banner-content p{font-size:13px}.banner-actions{align-items:flex-start;flex-direction:column}.banner-dot{width:24px}.banner-dot.active{width:38px}.site-header{height:auto;min-height:92px;padding:12px 16px;align-items:flex-start;gap:12px}.page{padding:24px 16px 56px}.home-hero{min-height:420px;padding:42px 24px;border-radius:22px}.home-hero .hero-h{font-size:34px}.home-hero .hero-p{font-size:15px}.home-hero .hero-stats{gap:12px}.home-hero .hero-stats>div{padding:16px}.act-card{min-height:0}.act-thumb{width:108px;min-width:108px}.act-body{padding:18px 16px}.act-title{font-size:16px}.act-meta,.act-desc{font-size:12px}.contact-grid{grid-template-columns:1fr}.gallery-hero{height:260px}}
 
 </style>
 </head>
@@ -253,6 +274,25 @@ body{background:linear-gradient(180deg,#EAF6FF 0%,#F8FCFF 46%,#EAF6FF 100%)}
         <div><div class="hstat-num">4</div><div class="hstat-lbl">活动类型</div></div>
       </div>
     </div>
+    <section class="activity-banner" aria-label="最近参加的反共活动轮播">
+      <div class="banner-media">
+        <img id="banner-img" src="" alt="最近参加的反共活动照片">
+      </div>
+      <div class="banner-content">
+        <div class="banner-kicker">最近参加的反共活动</div>
+        <h2 id="banner-title"></h2>
+        <div class="banner-meta" id="banner-meta"></div>
+        <p id="banner-desc"></p>
+        <div class="banner-actions">
+          <button class="banner-cta" id="banner-open" type="button">查看活动</button>
+          <div class="banner-controls" aria-label="轮播控制">
+            <button type="button" class="banner-nav" onclick="bannerNav(-1)" aria-label="上一项">&#8249;</button>
+            <button type="button" class="banner-nav" onclick="bannerNav(1)" aria-label="下一项">&#8250;</button>
+          </div>
+        </div>
+        <div class="banner-dots" id="banner-dots"></div>
+      </div>
+    </section>
     <div class="sec-title"><span class="ico">▤</span> 活动列表</div>
     <div class="act-list" id="act-list-container"></div>
   </div>
@@ -430,12 +470,65 @@ let currentImgIdx = 0;
 let currentImgList = [];
 let lbIdx = 0;
 let currentNotif = null;
+let bannerIdx = 0;
+let bannerTimer = null;
 
 // ---- INIT ----
 function init(){
+  renderActivityBanner();
   renderActivityList();
   renderNotifList();
   renderUpcoming();
+}
+
+
+function getBannerEvents(){
+  return [...EVENTS].reverse();
+}
+
+function renderActivityBanner(){
+  const banner = document.querySelector('.activity-banner');
+  if(!banner) return;
+  const events = getBannerEvents();
+  const dots = document.getElementById('banner-dots');
+  dots.innerHTML = events.map((_,i)=>`<button class="banner-dot" type="button" onclick="setBanner(${i})" aria-label="切换到第${i+1}项活动"></button>`).join('');
+  document.getElementById('banner-open').onclick = () => {
+    const originalIdx = EVENTS.findIndex(e => e.id === events[bannerIdx].id);
+    showActDetail(originalIdx);
+    window.scrollTo({top: document.getElementById('act-detail').offsetTop - 96, behavior: 'smooth'});
+  };
+  updateBanner();
+  startBannerAuto();
+}
+
+function updateBanner(){
+  const events = getBannerEvents();
+  const e = events[bannerIdx];
+  const banner = document.querySelector('.activity-banner');
+  banner.classList.add('is-changing');
+  window.setTimeout(()=>banner.classList.remove('is-changing'), 360);
+  document.getElementById('banner-img').src = IMGS[e.imgs[0]] || '';
+  document.getElementById('banner-img').alt = e.title;
+  document.getElementById('banner-title').textContent = e.title;
+  document.getElementById('banner-meta').textContent = `${e.date}  ·  ${e.location}  ·  ${e.category}  ·  ${e.imgs.length}张照片`;
+  document.getElementById('banner-desc').textContent = e.desc;
+  document.querySelectorAll('.banner-dot').forEach((dot,i)=>dot.classList.toggle('active', i===bannerIdx));
+}
+
+function setBanner(idx){
+  const events = getBannerEvents();
+  bannerIdx = (idx + events.length) % events.length;
+  updateBanner();
+  startBannerAuto();
+}
+
+function bannerNav(dir){
+  setBanner(bannerIdx + dir);
+}
+
+function startBannerAuto(){
+  window.clearInterval(bannerTimer);
+  bannerTimer = window.setInterval(()=>bannerNav(1), 4500);
 }
 
 function renderActivityList(){
