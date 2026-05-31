@@ -13,10 +13,10 @@ a:hover{text-decoration:underline}
 /* HEADER */
 .site-header{background:#070E1C;border-bottom:2px solid #1E3A8A;padding:0 32px;height:68px;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:100}
 .logo-wrap{display:flex;align-items:center;gap:14px}
-.logo-flag{width:40px;height:27px;border-radius:3px;flex-shrink:0;overflow:hidden;position:relative}
-.logo-flag .r1{background:#EF4444;height:9px}
-.logo-flag .r2{background:#F8FAFC;height:9px}
-.logo-flag .r3{background:#EF4444;height:9px}
+.logo-flag{width:48px;height:30px;border-radius:4px;flex-shrink:0;overflow:hidden;position:relative;background:#153E90;box-shadow:0 0 0 1px rgba(255,255,255,.22) inset}
+.logo-flag::before{content:"";position:absolute;inset:0;background:linear-gradient(135deg,#153E90 0 48%,#fff 48% 52%,#C1121F 52% 100%)}
+.logo-flag::after{content:"★";position:absolute;left:7px;top:4px;color:#fff;font-size:13px;text-shadow:0 1px 2px rgba(0,0,0,.35)}
+.logo-flag .r1,.logo-flag .r2,.logo-flag .r3{display:none}
 .logo-main{font-size:16px;font-weight:600;color:#F1F5F9;letter-spacing:0.02em}
 .logo-sub{font-size:11px;color:#475569;margin-top:1px}
 .nav{display:flex;gap:4px}
@@ -162,7 +162,7 @@ textarea{height:95px;resize:vertical}
 .logo-wrap:focus{outline:none}
 .logo-wrap:focus-visible{outline:2px solid #60A5FA;outline-offset:3px}
 .page{max-width:1120px}
-.home-hero{min-height:430px;padding:74px 58px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;background:linear-gradient(90deg,rgba(7,14,28,.96) 0%,rgba(15,23,42,.78) 50%,rgba(7,17,31,.52) 100%),url("images/image48.jpeg") center 45%/cover;border-color:#334155;box-shadow:0 28px 90px rgba(0,0,0,.38)}
+.home-hero{min-height:430px;padding:74px 58px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;background:linear-gradient(90deg,rgba(7,14,28,.96) 0%,rgba(15,23,42,.78) 50%,rgba(7,17,31,.52) 100%),url("images/hero-june4.avif") center 45%/cover;border-color:#334155;box-shadow:0 28px 90px rgba(0,0,0,.38)}
 .home-hero::after{width:360px;height:360px;right:-120px;top:-120px;background:radial-gradient(circle,rgba(239,68,68,.24),rgba(59,130,246,.08) 56%,transparent 70%)}
 .home-hero .hero-badge{background:rgba(239,68,68,.16);border-color:rgba(248,113,113,.7);color:#FECACA}
 .home-hero .hero-h{font-size:46px;line-height:1.12;letter-spacing:0;font-weight:800;max-width:720px}
@@ -180,13 +180,20 @@ body{background:linear-gradient(180deg,#EAF6FF 0%,#F8FCFF 46%,#EAF6FF 100%)}
 .nav-btn{font-size:14px;padding:11px 22px;border-radius:10px}
 .page{max-width:1320px;padding:42px 42px 86px}
 .hero{border-radius:24px}
-.home-hero{min-height:560px;padding:92px 78px;margin-bottom:42px;border-radius:28px;background:linear-gradient(180deg,rgba(7,14,28,.74) 0%,rgba(15,23,42,.64) 45%,rgba(7,17,31,.78) 100%),url("images/image48.jpeg") center 45%/cover;box-shadow:0 34px 110px rgba(15,23,42,.28)}
+.home-hero{min-height:560px;padding:92px 78px;margin-bottom:42px;border-radius:28px;background:linear-gradient(180deg,rgba(7,14,28,.74) 0%,rgba(15,23,42,.64) 45%,rgba(7,17,31,.78) 100%),url("images/hero-june4.avif") center 45%/cover;box-shadow:0 34px 110px rgba(15,23,42,.28)}
 .home-hero::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 42%,rgba(7,14,28,.42));pointer-events:none}
 .home-hero>*{position:relative;z-index:1}
 .home-hero .hero-badge{font-size:13px;padding:7px 18px;margin-bottom:22px;border-radius:999px}
 .home-hero .hero-h{font-size:64px;max-width:860px;margin-bottom:18px;line-height:1.08}
 .home-hero .hero-p{font-size:18px;max-width:820px;line-height:2;color:#E2E8F0}
 .home-hero .hero-slogan{font-size:30px;letter-spacing:0;max-width:820px}
+.dual .en-line,.en-line{display:block;margin-top:4px;color:#94A3B8;font-size:.86em;font-weight:500;line-height:1.45}
+.hero-h .en-line{color:#DBEAFE;font-size:.34em;letter-spacing:.03em}
+.hero-slogan .en-line{color:#BFDBFE;font-size:.62em;font-weight:650}
+.bilingual-note{margin-top:10px;color:#BFDBFE;font-size:13px;letter-spacing:.02em}
+.preview-card{display:grid;grid-template-columns:92px 1fr;gap:12px;align-items:center}
+.preview-card img{width:92px;height:66px;object-fit:cover;border-radius:8px;border:1px solid #1E293B}
+.up-body{font-size:12px;color:#64748B;line-height:1.55;margin-top:4px}
 .sec-title{font-size:22px;color:#0F172A;margin:34px 0 22px;padding-bottom:16px;border-bottom:1px solid rgba(15,23,42,.18)}
 .sec-title .ico{font-size:20px;color:#2563EB}
 
@@ -223,7 +230,7 @@ body{background:linear-gradient(180deg,#EAF6FF 0%,#F8FCFF 46%,#EAF6FF 100%)}
 .act-arrow{font-size:30px;padding:0 22px;color:#475569}
 .gallery-hero{height:540px;border-radius:24px;box-shadow:0 22px 70px rgba(15,23,42,.18)}
 .detail-card,.form-card,.upcoming-wrap{border-radius:22px;box-shadow:0 16px 48px rgba(15,23,42,.12)}
-.contact-grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:18px}
+.contact-grid{grid-template-columns:1fr;gap:18px}
 @media(max-width:980px){.activity-banner{grid-template-columns:1fr}.banner-media{min-height:300px}.banner-content{padding:34px}.page{padding:30px 24px 70px}.home-hero{min-height:470px;padding:64px 42px}.home-hero .hero-h{font-size:46px}.act-list{grid-template-columns:1fr}.contact-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:640px){.activity-banner{border-radius:22px;margin-bottom:32px}.banner-media{min-height:220px}.banner-content{padding:26px 22px}.banner-content h2{font-size:24px}.banner-content p{font-size:13px}.banner-actions{align-items:flex-start;flex-direction:column}.banner-dot{width:24px}.banner-dot.active{width:38px}.site-header{height:auto;min-height:92px;padding:12px 16px;align-items:flex-start;gap:12px}.page{padding:24px 16px 56px}.home-hero{min-height:420px;padding:42px 24px;border-radius:22px}.home-hero .hero-h{font-size:34px}.home-hero .hero-slogan{font-size:20px}.home-hero .hero-p{font-size:15px}.act-card{min-height:0}.act-thumb{width:108px;min-width:108px}.act-body{padding:18px 16px}.act-title{font-size:16px}.act-meta,.act-desc{font-size:12px}.contact-grid{grid-template-columns:1fr}.gallery-hero{height:260px}}
 
@@ -232,7 +239,7 @@ body{background:linear-gradient(180deg,#EAF6FF 0%,#F8FCFF 46%,#EAF6FF 100%)}
 <body>
 
 <header class="site-header">
-  <div class="logo-wrap" onclick="goHome()" role="button" tabindex="0" aria-label="返回首页">
+  <div class="logo-wrap" onclick="goHome()" role="button" tabindex="0" aria-label="返回首页 / Back to home">
     <div class="logo-flag"><div class="r1"></div><div class="r2"></div><div class="r3"></div></div>
     <div>
       <div class="logo-main">华夏公民自由联盟</div>
@@ -241,14 +248,14 @@ body{background:linear-gradient(180deg,#EAF6FF 0%,#F8FCFF 46%,#EAF6FF 100%)}
   </div>
   <nav class="nav">
     <button class="nav-btn active" id="tab-act" onclick="showPage('act')">
-      <span>📅</span> 最近活动
+      <span>📅</span> 活动记录 / Activities
     </button>
     <button class="nav-btn" id="tab-notif" onclick="showPage('notif')">
-      <span>🔔</span> 通知中心
-      <span class="nav-badge">3</span>
+      <span>🔔</span> 通知中心 / Notices
+      <span class="nav-badge">4</span>
     </button>
     <button class="nav-btn" id="tab-contact" onclick="showPage('contact')">
-      <span>✉️</span> 联系我们
+      <span>✉️</span> 联系我们 / Contact
     </button>
   </nav>
 </header>
@@ -257,35 +264,35 @@ body{background:linear-gradient(180deg,#EAF6FF 0%,#F8FCFF 46%,#EAF6FF 100%)}
 <div class="page active" id="page-act">
   <div id="act-list">
     <div class="hero home-hero">
-      <div class="hero-badge">公民同行 · 自由共守</div>
-      <div class="hero-h">华夏公民自由联盟</div>
-      <div class="hero-slogan">结束独裁政权&nbsp;&nbsp;捍卫宗教自由</div>
-      <div class="hero-p">以公民的勇气记录现场，以自由的信念连接彼此。这里汇集民主纪念、抗议行动、人权声援与公民参与记录，让每一次发声都成为推动自由中国的见证。</div>
+      <div class="hero-badge">公民同行 · 自由共守 / Citizens Together, Freedom Together</div>
+      <div class="hero-h">华夏公民自由联盟<span class="en-line">Huaxia Civic Freedom Alliance</span></div>
+      <div class="hero-slogan">结束独裁政权&nbsp;&nbsp;捍卫宗教自由<span class="en-line">End Dictatorship · Defend Religious Freedom</span></div>
+      <div class="hero-p">以公民的勇气记录现场，以自由的信念连接彼此。这里汇集民主纪念、抗议行动、人权声援与公民参与记录，让每一次发声都成为推动自由中国的见证。<span class="en-line">We record civic action with courage and connect people through the belief in freedom. This site documents democratic memorials, protests, human-rights advocacy, and civic participation.</span></div>
     </div>
-    <section class="activity-banner" aria-label="最近参加的反共活动轮播">
+    <section class="activity-banner" aria-label="最新活动预告轮播 / Upcoming events">
       <div class="banner-media">
-        <img id="banner-img" src="" alt="最近参加的现场图片">
+        <img id="banner-img" src="" alt="最新活动预告图片 / Upcoming event image">
       </div>
       <div class="banner-content">
-        <div class="banner-kicker">最近参加的反共活动</div>
+        <div class="banner-kicker">最新活动预告 / Upcoming Events</div>
         <h2 id="banner-title"></h2>
         <div class="banner-meta" id="banner-meta"></div>
         <p id="banner-desc"></p>
         <div class="banner-actions">
-          <button class="banner-cta" id="banner-open" type="button">查看活动</button>
-          <div class="banner-controls" aria-label="轮播控制">
-            <button type="button" class="banner-nav" onclick="bannerNav(-1)" aria-label="上一项">&#8249;</button>
-            <button type="button" class="banner-nav" onclick="bannerNav(1)" aria-label="下一项">&#8250;</button>
+          <button class="banner-cta" id="banner-open" type="button">查看预告 / View Details</button>
+          <div class="banner-controls" aria-label="轮播控制 / Carousel controls">
+            <button type="button" class="banner-nav" onclick="bannerNav(-1)" aria-label="上一项 / Previous item">&#8249;</button>
+            <button type="button" class="banner-nav" onclick="bannerNav(1)" aria-label="下一项 / Next item">&#8250;</button>
           </div>
         </div>
         <div class="banner-dots" id="banner-dots"></div>
       </div>
     </section>
-    <div class="sec-title"><span class="ico">▤</span> 活动列表</div>
+    <div class="sec-title"><span class="ico">▤</span> 活动记录 / Activity Records</div>
     <div class="act-list" id="act-list-container"></div>
   </div>
   <div class="detail" id="act-detail">
-    <button class="back-btn" onclick="backToList('act')">← 返回活动列表</button>
+    <button class="back-btn" onclick="backToList('act')">← 返回活动列表 / Back to Activities</button>
     <div class="gallery-hero" id="gallery-hero">
       <img id="gallery-main-img" src="" alt="现场图片" onclick="openLightbox()">
       <button class="nav-arrow arr-left" onclick="galleryNav(-1)">&#8249;</button>
@@ -304,12 +311,12 @@ body{background:linear-gradient(180deg,#EAF6FF 0%,#F8FCFF 46%,#EAF6FF 100%)}
       <div id="d-link-wrap"></div>
     </div>
     <div class="detail-card" style="background:#0D2040;border-color:#1E3A8A">
-      <div style="font-size:13px;font-weight:600;color:#60A5FA;margin-bottom:8px">📌 参与须知</div>
+      <div style="font-size:13px;font-weight:600;color:#60A5FA;margin-bottom:8px">📌 参与须知 / Participation Notes</div>
       <div style="font-size:12px;color:#3B82F6;line-height:1.9">
-        ✦ 活动免费开放，无需预约<br>
-        ✦ 欢迎携带和平标语及相关纪念物品<br>
-        ✦ 禁止任何形式的暴力行为<br>
-        ✦ 提前到场协助布置
+        ✦ 活动免费开放，无需预约 / Events are open to the public and free to attend<br>
+        ✦ 欢迎携带和平标语及相关纪念物品 / Peaceful signs and memorial items are welcome<br>
+        ✦ 禁止任何形式的暴力行为 / Violence of any kind is not permitted<br>
+        ✦ 提前到场协助布置 / Please arrive early if you can help with setup
       </div>
     </div>
   </div>
@@ -320,18 +327,18 @@ body{background:linear-gradient(180deg,#EAF6FF 0%,#F8FCFF 46%,#EAF6FF 100%)}
   <div id="notif-list">
     <div class="hero">
       <div class="hero-badge">🔔 实时更新 · Live Updates</div>
-      <div class="hero-h">通知中心</div>
-      <div class="hero-p">接收最新活动通知、重要公告与来自组织的实时消息。</div>
+      <div class="hero-h">通知中心<span class="en-line">Notice Center</span></div>
+      <div class="hero-p">接收最新活动通知、重要公告与来自组织的实时消息。<span class="en-line">Find upcoming event notices, important announcements, and updates from the alliance.</span></div>
     </div>
-    <div class="sec-title"><span class="ico">🔔</span> 最新通知</div>
+    <div class="sec-title"><span class="ico">🔔</span> 最新通知 / Latest Notices</div>
     <div class="notif-list" id="notif-list-container"></div>
     <div class="upcoming-wrap">
-      <div class="sec-title" style="margin-bottom:14px"><span class="ico">📆</span> 接下来的活动</div>
+      <div class="sec-title" style="margin-bottom:14px"><span class="ico">📆</span> 最新活动预告 / Upcoming Events</div>
       <div id="upcoming-container"></div>
     </div>
   </div>
   <div class="detail" id="notif-detail">
-    <button class="back-btn" onclick="backToList('notif')">← 返回通知列表</button>
+    <button class="back-btn" onclick="backToList('notif')">← 返回通知列表 / Back to Notices</button>
     <div class="detail-card">
       <div style="display:flex;align-items:center;gap:14px;margin-bottom:14px">
         <div class="notif-detail-icon" id="nd-icon">📣</div>
@@ -349,8 +356,8 @@ body{background:linear-gradient(180deg,#EAF6FF 0%,#F8FCFF 46%,#EAF6FF 100%)}
     <div class="detail-card" style="background:#0D2040;border-color:#1E3A8A;display:flex;gap:14px;align-items:center">
       <span style="font-size:28px">📢</span>
       <div>
-        <div style="font-size:13px;font-weight:600;color:#60A5FA;margin-bottom:4px">扩散此消息</div>
-        <div style="font-size:12px;color:#3B82F6">转发此通知，让更多人了解最新动态。</div>
+        <div style="font-size:13px;font-weight:600;color:#60A5FA;margin-bottom:4px">扩散此消息 / Share This Notice</div>
+        <div style="font-size:12px;color:#3B82F6">转发此通知，让更多人了解最新动态。 / Share this update so more people can learn what is happening.</div>
       </div>
     </div>
   </div>
@@ -360,43 +367,40 @@ body{background:linear-gradient(180deg,#EAF6FF 0%,#F8FCFF 46%,#EAF6FF 100%)}
 <div class="page" id="page-contact">
   <div class="hero">
     <div class="hero-badge">✉️ 联络我们 · Contact Us</div>
-    <div class="hero-h">联系我们</div>
-    <div class="hero-p">无论您是希望加入我们、提供线索，还是寻求协助，我们随时在这里。</div>
+    <div class="hero-h">联系我们<span class="en-line">Contact Us</span></div>
+    <div class="hero-p">无论您是希望加入我们、提供线索，还是寻求协助，我们随时在这里。<span class="en-line">Whether you want to join us, share information, or seek assistance, you can reach us here.</span></div>
   </div>
   <div class="contact-grid">
-    <div class="contact-card"><div class="contact-icon-box">📧</div><div><div class="c-label">电子邮件</div><div class="c-val">info@freedomalliance.org</div></div></div>
-    <div class="contact-card"><div class="contact-icon-box">📞</div><div><div class="c-label">紧急热线（英语）</div><div class="c-val">+1 (800) 555-0198</div></div></div>
-    <div class="contact-card"><div class="contact-icon-box">📱</div><div><div class="c-label">Telegram 频道</div><div class="c-val">@FreedomAllianceHK</div></div></div>
-    <div class="contact-card"><div class="contact-icon-box">📮</div><div><div class="c-label">邮寄地址</div><div class="c-val">PO Box 1989, Los Angeles CA</div></div></div>
+    <div class="contact-card"><div class="contact-icon-box">📧</div><div><div class="c-label">电子邮件 / Email</div><div class="c-val">endccp19890604@gmail.com</div></div></div>
   </div>
   <div class="form-card">
-    <div class="sec-title" style="margin-bottom:18px"><span class="ico">💬</span> 发送留言</div>
+    <div class="sec-title" style="margin-bottom:18px"><span class="ico">💬</span> 发送留言 / Send a Message</div>
     <div class="form-row-2">
-      <div class="form-group"><label class="form-label">您的姓名</label><input type="text" placeholder="请输入姓名"></div>
-      <div class="form-group"><label class="form-label">电子邮件</label><input type="email" placeholder="yourname@email.com"></div>
+      <div class="form-group"><label class="form-label">您的姓名 / Name</label><input type="text" placeholder="请输入姓名 / Your name"></div>
+      <div class="form-group"><label class="form-label">电子邮件 / Email</label><input type="email" placeholder="yourname@email.com"></div>
     </div>
-    <div class="form-group"><label class="form-label">留言主题</label>
+    <div class="form-group"><label class="form-label">留言主题 / Subject</label>
       <select>
-        <option>参与志愿者活动</option>
-        <option>提供新闻线索</option>
-        <option>寻求庇护协助</option>
-        <option>媒体合作</option>
-        <option>捐款支持</option>
-        <option>其他</option>
+        <option>参与志愿者活动 / Volunteer</option>
+        <option>提供新闻线索 / Share News Tips</option>
+        <option>寻求协助 / Request Assistance</option>
+        <option>媒体合作 / Media Cooperation</option>
+        <option>捐款支持 / Donation Support</option>
+        <option>其他 / Other</option>
       </select>
     </div>
-    <div class="form-group"><label class="form-label">留言内容</label><textarea placeholder="请在此输入您的留言……"></textarea></div>
+    <div class="form-group"><label class="form-label">留言内容 / Message</label><textarea placeholder="请在此输入您的留言…… / Please write your message here..."></textarea></div>
     <div style="display:flex;align-items:center;gap:14px;flex-wrap:wrap">
-      <button class="submit-btn" onclick="submitForm()">发送留言 →</button>
-      <div style="font-size:12px;color:#475569">我们通常在48小时内回复</div>
+      <button class="submit-btn" onclick="submitForm()">发送留言 / Send →</button>
+      <div style="font-size:12px;color:#475569">我们通常在48小时内回复 / We usually reply within 48 hours</div>
     </div>
   </div>
   <div class="safety-box">
-    <div class="safety-title">🔒 安全提示</div>
+    <div class="safety-title">🔒 安全提示 / Safety Notice</div>
     <div class="safety-body">
-      ✦ 如您处于敏感地区，建议使用 VPN 及加密通信工具（如 Signal）联系我们<br>
-      ✦ 我们绝不向任何政府机构披露举报人及联系人信息<br>
-      ✦ 如遇紧急人身安全威胁，请优先联系当地紧急救援服务
+      ✦ 如您处于敏感地区，建议使用 VPN 及加密通信工具（如 Signal）联系我们 / If you are in a sensitive area, consider using VPN and encrypted tools such as Signal.<br>
+      ✦ 我们绝不向任何政府机构披露举报人及联系人信息 / We do not disclose contacts or sources to any government agency.<br>
+      ✦ 如遇紧急人身安全威胁，请优先联系当地紧急救援服务 / In an immediate safety emergency, contact local emergency services first.
     </div>
   </div>
 </div>
@@ -480,7 +484,11 @@ const IMGS = {
   china_congress_voter_card_jpg: "images/china-congress-voter-card.jpg",
   image66_jpeg: "images/image66.jpeg",
   image67_jpeg: "images/image67.jpeg",
-  image68_jpeg: "images/image68.jpeg"
+  image68_jpeg: "images/image68.jpeg",
+  preview_june4_wall_jpg: "images/preview-june4-wall.jpg",
+  preview_ukraine_freedom_jpg: "images/preview-ukraine-freedom.jpg",
+  preview_37_years_jpg: "images/preview-37-years.jpg",
+  preview_democracy_car_jpg: "images/preview-democracy-car.jpg"
 };
 
 const EVENTS_RAW = [
@@ -493,7 +501,7 @@ const EVENTS_RAW = [
   {"id": "e20231115", "date": "2023年11月15日", "title": "旧金山抗议习近平访美", "location": "旧金山", "category": "重点行动", "desc": "我组织华夏公民自由联盟数名成员前往旧金山，抗议中共独裁者习近平窜访美国。我们在现场举起横幅、表达诉求，向国际社会传递中国人民反对独裁、争取民主自由与宗教自由的声音。这次行动是联盟公开参与反共抗议的重要记录。", "images": ["image48.jpeg", "image49.jpeg", "image50.jpeg", "image51.jpeg", "image52.jpeg", "image53.jpeg"], "imgs_safe": ["image48_jpeg", "image49_jpeg", "image50_jpeg", "image51_jpeg", "image52_jpeg", "image53_jpeg"]},
   {"id": "e20231126", "date": "2023年11月26日", "title": "白纸革命一周年纪念抗议", "location": "中国驻洛杉矶领事馆", "category": "抗议行动", "desc": "为纪念白纸革命一周年，我与华夏公民自由联盟成员到中国驻洛杉矶领事馆参加抗议活动，声援反抗封控与极权压迫的中国民众。", "images": ["image54.jpeg", "image55.jpeg", "image56.jpeg", "image57.jpeg", "image58.jpeg"], "imgs_safe": ["image54_jpeg", "image55_jpeg", "image56_jpeg", "image57_jpeg", "image58_jpeg"]},
   {"id": "e1", "date": "2024年3月10日", "title": "第11届奥斯卡中国自由人权奖", "location": "洛杉矶", "category": "人权颁奖", "desc": "我参加第十一届奥斯卡中国自由人权奖活动，支持长期为中国民主、自由与人权事业发声的人士，见证海外华人对人权价值的坚持。", "images": ["image1.jpeg", "image2.jpeg", "image3.jpeg", "image4.jpeg", "image5.png"], "imgs_safe": ["image1_jpeg", "image2_jpeg", "image3_jpeg", "image4_jpeg", "image5_png"]},
-  {"id": "e2", "date": "2024年5月18日", "title": "海滩纪念六四35周年", "location": "洛杉矶海滩", "category": "民主纪念", "desc": "我参加洛杉矶海滩六四35周年纪念活动，以悼念和公开表达的方式追思遇难者，呼吁中共当局正视历史、停止压制人民自由。", "images": ["image6.jpeg", "image7.jpeg"], "imgs_safe": ["image6_jpeg", "image7_jpeg"]},
+  {"id": "e2", "date": "2024年5月18日", "title": "洛杉矶圣莫尼卡海滩", "location": "洛杉矶圣莫尼卡海滩", "category": "民主纪念", "desc": "我参加洛杉矶圣莫尼卡海滩六四35周年纪念活动，以悼念和公开表达的方式追思遇难者，呼吁中共当局正视历史、停止压制人民自由。", "images": ["image6.jpeg", "image7.jpeg"], "imgs_safe": ["image6_jpeg", "image7_jpeg"]},
   {"id": "e3", "date": "2024年6月2日", "title": "自由雕塑公园六四35周年纪念", "location": "自由雕塑公园", "category": "民主纪念", "desc": "我在自由雕塑公园参加六四35周年纪念活动，与各界民主人士共同追思遇难者，继续传递反对极权、守护自由的信念。", "images": ["image8.jpeg", "image9.jpeg", "image10.jpeg", "image11.jpeg", "image12.png", "image13.png", "image14.png"], "imgs_safe": ["image8_jpeg", "image9_jpeg", "image10_jpeg", "image11_jpeg", "image12_png", "image13_png", "image14_png"]},
   {"id": "e4", "date": "2024年8月25日", "title": "参加中国民主党反共座谈会", "location": "圣盖博希尔顿酒店", "category": "座谈论坛", "desc": "我参加中国民主党创党元老朱虞夫主持的反共座谈会，与民主人士共同讨论中国民主化的方向、策略与海外行动责任。", "images": ["image16.jpeg", "image15.png", "image17.jpeg"], "link": "https://www.ntdtv.com/b5/2024/08/27/a103908597.html", "link_text": "新唐人新闻报道", "imgs_safe": ["image16_jpeg", "image15_png", "image17_jpeg"]},
   {"id": "e5", "date": "2025年3月2日", "title": "第12届奥斯卡中国自由人权奖", "location": "洛杉矶", "category": "人权颁奖", "desc": "我参加第十二届奥斯卡中国自由人权奖活动，继续支持推动中国民主与人权事业的倡导者，让更多人关注中共对异议人士的压迫。", "images": ["image18.jpeg", "image19.jpeg"], "imgs_safe": ["image18_jpeg", "image19_jpeg"]},
@@ -504,21 +512,41 @@ const EVENTS_RAW = [
   {"id": "e20260524", "date": "2026年5月24日", "title": "第13届奥斯卡中国自由人权奖", "location": "洛杉矶六四纪念馆", "category": "人权颁奖", "desc": "我与朋友前往由六四学生领袖王丹先生创办的六四纪念馆，参加第十三届奥斯卡中国自由人权奖颁奖活动。通过参与此次活动，我继续表达对中国民主运动和人权事业的支持，也希望更多人了解中共长期压制异见、侵犯人权的事实。", "images": ["image66.jpeg", "image67.jpeg", "image68.jpeg"], "imgs_safe": ["image66_jpeg", "image67_jpeg", "image68_jpeg"]}
 ];
 
-// Attach safe image keys
-const EVENTS = EVENTS_RAW.map(e => ({...e, imgs: e.imgs_safe || []}));
+// Attach safe image keys and English translations for bilingual display
+const EVENT_TRANSLATIONS = {
+  e20230604:{title_en:"June 4 Memorial at Freedom Sculpture Park",location_en:"Freedom Sculpture Park, California",category_en:"Democratic Memorial",desc_en:"I attended a June 4 memorial at Freedom Sculpture Park to honor those who died while seeking democracy and freedom for the Chinese people, and to affirm the need to remember history and oppose dictatorship."},
+  e20230726:{title_en:"Supporting Freedom Sculpture Park",location_en:"Freedom Sculpture Park Foundation",category_en:"Donation Support",desc_en:"I donated $100 to the Freedom Sculpture Park Foundation to support overseas memorial spaces that preserve the history of Chinese people’s pursuit of freedom and human rights."},
+  e20230813:{title_en:"Los Angeles Rally for Lawyer Gao Zhisheng",location_en:"Chinese Consulate in Los Angeles",category_en:"Human Rights Advocacy",desc_en:"On the sixth anniversary of lawyer Gao Zhisheng’s secret detention by the Chinese authorities, I joined a rally outside the Chinese Consulate in Los Angeles to call for continued public attention to his persecution."},
+  e20230925:{title_en:"Donation for the Anti-Communist Wall",location_en:"Freedom Sculpture Park, California",category_en:"Donation Support",desc_en:"I donated $1,000 to support the construction of the Anti-Communist Wall at Freedom Sculpture Park, helping preserve public memory and expose the crimes of dictatorship."},
+  e20230930:{title_en:"Seminar: How to Overthrow the CCP",location_en:"Los Angeles",category_en:"Forum",desc_en:"I attended the seminar “How to Overthrow the CCP,” organized by the China Human Rights Alliance and the China Democracy Party, to discuss paths toward ending dictatorship and advancing democratic transition in China."},
+  e20231001:{title_en:"October 1 Anti-CCP Protest Action",location_en:"Freedom Sculpture Park / Chinese Consulate in Los Angeles",category_en:"Protest Action",desc_en:"I organized members of the Huaxia Civic Freedom Alliance to burn the CCP flag at Freedom Sculpture Park in the morning and protest outside the Chinese Consulate in Los Angeles in the afternoon."},
+  e20231115:{title_en:"San Francisco Protest Against Xi Jinping’s U.S. Visit",location_en:"San Francisco",category_en:"Key Action",desc_en:"I organized members of the Huaxia Civic Freedom Alliance to protest Xi Jinping’s visit to the United States in San Francisco, raising banners and speaking out for democracy, freedom, and religious liberty."},
+  e20231126:{title_en:"White Paper Movement Anniversary Protest",location_en:"Chinese Consulate in Los Angeles",category_en:"Protest Action",desc_en:"To mark the first anniversary of the White Paper Movement, I joined members of the Huaxia Civic Freedom Alliance at the Chinese Consulate in Los Angeles to support people resisting lockdowns and authoritarian oppression."},
+  e1:{title_en:"11th Oscar China Freedom and Human Rights Award",location_en:"Los Angeles",category_en:"Human Rights Award",desc_en:"I attended the 11th Oscar China Freedom and Human Rights Award to support those who have long spoken for democracy, freedom, and human rights in China."},
+  e2:{title_en:"Los Angeles Santa Monica Beach",location_en:"Santa Monica Beach, Los Angeles",category_en:"Democratic Memorial",desc_en:"I attended the June 4 35th anniversary memorial at Santa Monica Beach in Los Angeles, honoring the victims and calling on the Chinese authorities to face history and stop suppressing freedom."},
+  e3:{title_en:"June 4 35th Anniversary at Freedom Sculpture Park",location_en:"Freedom Sculpture Park",category_en:"Democratic Memorial",desc_en:"I joined democratic activists at Freedom Sculpture Park to commemorate the 35th anniversary of June 4 and continue sharing the belief in opposing totalitarianism and defending freedom."},
+  e4:{title_en:"China Democracy Party Anti-Communist Forum",location_en:"Hilton San Gabriel",category_en:"Forum",desc_en:"I attended an anti-communist forum hosted by China Democracy Party founder Zhu Yufu, discussing China’s democratic future and the responsibility of overseas action."},
+  e5:{title_en:"12th Oscar China Freedom and Human Rights Award",location_en:"Los Angeles",category_en:"Human Rights Award",desc_en:"I attended the 12th Oscar China Freedom and Human Rights Award to continue supporting advocates for Chinese democracy and human rights."},
+  e20250601:{title_en:"June 4 36th Anniversary at Freedom Sculpture Park",location_en:"Freedom Sculpture Park, California",category_en:"Democratic Memorial",desc_en:"I attended the 36th anniversary memorial for June 4 at Freedom Sculpture Park, honoring those who sacrificed for freedom and calling for China’s democratization."},
+  e20250604:{title_en:"June 4 36th Anniversary at the Los Angeles Consulate",location_en:"Chinese Consulate in Los Angeles",category_en:"Democratic Memorial",desc_en:"I commemorated the 36th anniversary of June 4 outside the Chinese Consulate in Los Angeles, mourning the victims and opposing CCP dictatorship and human-rights abuses."},
+  e6:{title_en:"Unveiling Ceremony for the Gao Zhisheng Sculpture",location_en:"Freedom Sculpture Park, California",category_en:"Memorial",desc_en:"I attended the unveiling ceremony for the Gao Zhisheng sculpture with members and friends of the Huaxia Civic Freedom Alliance, calling attention to his secret detention and long persecution."},
+  e20260423:{title_en:"China Congress Overseas House Founding Voter Registration",location_en:"Online / Overseas Civic Participation",category_en:"Civic Participation",desc_en:"I registered as a founding voter of the China Congress Overseas House, expressing support for democracy and freedom and opposition to CCP dictatorship."},
+  e20260524:{title_en:"13th Oscar China Freedom and Human Rights Award",location_en:"June 4th Memorial Museum, Los Angeles",category_en:"Human Rights Award",desc_en:"I attended the 13th Oscar China Freedom and Human Rights Award at the June 4th Memorial Museum, continuing to support the Chinese democracy and human-rights movement."}
+};
+const EVENTS = EVENTS_RAW.map(e => ({...e, ...(EVENT_TRANSLATIONS[e.id] || {}), imgs: e.imgs_safe || []}));
 
 const NOTIFS = [
-  {id:"n1",icon:"🏆",cat:"活动公告",title:"第12届奥斯卡人权颁奖典礼圆满举行",date:"2025年3月2日",place:"洛杉矶",body:"第十二届海外华人奥斯卡人权颁奖典礼于2025年3月2日在洛杉矶隆重举行，数十位民主人士获得表彰，现场逾百人出席见证这一重要时刻。",read:false},
-  {id:"n2",icon:"📋",cat:"活动通知",title:"2024年度活动总结报告发布",date:"2025年1月15日",place:"全球线上",body:"我们的2024年度报告已正式发布，涵盖全年五项重大活动，包括奥斯卡人权颁奖、两场六四纪念活动、反共座谈会，参与人次突破千人。",read:false},
-  {id:"n3",icon:"🌐",cat:"媒体报道",title:"六四35周年纪念活动引国际媒体广泛关注",date:"2024年6月10日",place:"洛杉矶·自由雕塑公园",body:"我们举办的六四35周年系列纪念活动获得新唐人、大纪元、美国之音等多家媒体报道，影响力延伸至全球华人社区。",read:false},
-  {id:"n4",icon:"✅",cat:"媒体上线",title:"新唐人朱虞夫座谈会专题报道上线",date:"2024年8月27日",place:"圣盖博·希尔顿酒店",body:"新唐人电视台已播出圣盖博希尔顿酒店反共座谈会的新闻专题报道，详细介绍了中国民主党元老朱虞夫的演讲内容及与会人士的观点。",link:"https://www.ntdtv.com/b5/2024/08/27/a103908597.html",read:true},
-  {id:"n5",icon:"📣",cat:"招募公告",title:"2025年活动志愿者招募正式启动",date:"2025年2月1日",place:"洛杉矶",body:"2025年系列活动筹备工作正式启动，现招募现场协调员、摄影记录员、多语言翻译（粤普维藏）及社媒内容创作志愿者，欢迎加入。",read:true},
+  {id:"n20260531",icon:"🚗",cat:"活动预告 / Event Notice",title:"六四37周年民主战车城市游行",title_en:"June 4 37th Anniversary Democracy Car Rally",date:"2026年5月31日 / May 31, 2026",place:"San Gabriel / Rosemead / Monterey Park / Chinese Consulate in Los Angeles",body:"民主战车将从圣盖博出发，途经柔似蜜、蒙特利公园，并前往洛杉矶中国领事馆参加六四37周年悼念活动。以流动行动把记忆带入社区，让更多人看见民主与自由的声音。",body_en:"The democracy car rally will start from San Gabriel, pass through Rosemead and Monterey Park, and continue to the Chinese Consulate in Los Angeles for June 4 memorial activities. The moving action brings memory into the community and keeps the call for democracy and freedom visible.",read:false},
+  {id:"n20260603",icon:"🕯",cat:"活动预告 / Event Notice",title:"37 YEARS：永不忘记，永不放弃",title_en:"37 YEARS: Never Forget, Never Give Up",date:"2026年6月3日 晚上7:00 / June 3, 2026, 7:00 PM",place:"443 Shatto Pl, Los Angeles, CA 90020",body:"铭记1989年6月4日，为言说的权利、为未竟的自由继续发声。活动将在洛杉矶中国领事馆前举行，悼念遇难者，也提醒世界：自由不会自动到来，需要持续守护。",body_en:"Remember June 4, 1989, and continue speaking for the right to speak and the unfinished cause of freedom. The event will take place outside the Chinese Consulate in Los Angeles to mourn the victims and remind the world that freedom must be defended.",read:false},
+  {id:"n20260604",icon:"🖼",cat:"活动预告 / Event Notice",title:"六四纪念馆壁画揭幕仪式",title_en:"June 4th Memorial Museum Mural Unveiling",date:"2026年6月4日 下午3:00 / June 4, 2026, 3:00 PM",place:"June 4th Memorial Museum",body:"六四纪念馆将举行壁画揭幕仪式。让历史留在墙上，让真相被看见，让记忆代代相传。铭记六四，不忘历史，捍卫自由。",body_en:"The June 4th Memorial Museum will hold a mural unveiling ceremony. Let history remain on the wall, let the truth be seen, and let memory live on. Remember June 4, never forget history, and defend freedom.",read:false},
+  {id:"n20260606",icon:"🗽",cat:"活动预告 / Event Notice",title:"捍卫自由乌克兰雕塑落成典礼",title_en:"Defend Freedom Ukraine Sculpture Dedication",date:"2026年6月6日 下午3:00 / June 6, 2026, 3:00 PM",place:"Freedom Sculpture Park, 37570 Yermo Rd, Yermo, CA 92398",body:"六四37周年、美国独立250周年之际，自由雕塑公园将举行“捍卫自由乌克兰”雕塑落成典礼。自由从不免费，需要用勇气、牺牲与记忆去守护。",body_en:"Around the 37th anniversary of June 4 and the 250th anniversary of American independence, Freedom Sculpture Park will host the Defend Freedom Ukraine sculpture dedication. Freedom is never free; it must be defended through courage, sacrifice, and memory.",read:false}
 ];
 
 const UPCOMING = [
-  {month:"JUN",day:"04",title:"六四36周年烛光守夜",loc:"洛杉矶·中国城中央广场",detail:{title:"六四36周年烛光守夜",date:"2025年6月4日（星期三）",time:"下午6:00 — 晚上9:00",place:"洛杉矶中国城中央广场",body:"六四事件36周年，我们再次聚集以烛光悼念遇难者。活动包括名单朗读、幸存者证词分享、纪录片放映。活动免费开放，欢迎携家带口共同参与。"}},
-  {month:"AUG",day:"25",title:"2025反共民主论坛",loc:"圣盖博·希尔顿酒店",detail:{title:"2025反共民主论坛",date:"2025年8月25日（星期一）",time:"上午9:00 — 下午5:00",place:"圣盖博希尔顿酒店",body:"延续2024年传统，邀请民主运动领袖、学者与社区代表，共同探讨推进中国民主化的战略与路径，并表彰在民主事业中作出贡献的人士。"}},
-  {month:"OCT",day:"01",title:"反中共建政日抗议游行",loc:"洛杉矶·中国城",detail:{title:"反中共建政日抗议游行",date:"2025年10月1日（星期三）",time:"下午2:00",place:"洛杉矶中国城",body:"在中共建政76周年之际，我们上街游行，抗议中共对人权、自由与民主的系统性压制。游行路线：中国城 → 市政厅，全程约3公里。"}},
+  {month:"MAY",day:"31",image:"preview_democracy_car_jpg",title:"六四37周年民主战车城市游行",title_en:"June 4 37th Anniversary Democracy Car Rally",loc:"San Gabriel → Rosemead → Monterey Park → Los Angeles Consulate",desc:"为自由共命运，同抗争。民主战车多城市巡行，把六四记忆带入华人社区。",desc_en:"A multi-city democracy car rally brings June 4 remembrance into local Chinese communities.",detail:{title:"六四37周年民主战车城市游行",title_en:"June 4 37th Anniversary Democracy Car Rally",date:"2026年5月31日（星期日） / Sunday, May 31, 2026",time:"2:30 PM 集合；5:00 PM 洛杉矶中国领事馆集合 / 2:30 PM gathering; 5:00 PM at the Chinese Consulate",place:"1453 E Valley Blvd, Alhambra, CA 91801；443 Shatto Pl, Los Angeles, CA 90020",body:"民主战车将从圣盖博出发，途经柔似蜜、蒙特利公园，并前往洛杉矶中国领事馆参加六四37周年悼念活动。以流动行动把记忆带入社区，让更多人看见民主与自由的声音。",body_en:"The democracy car rally will start from San Gabriel, pass through Rosemead and Monterey Park, and continue to the Chinese Consulate in Los Angeles for June 4 memorial activities. The moving action brings memory into the community and keeps the call for democracy and freedom visible."}},
+  {month:"JUN",day:"03",image:"preview_37_years_jpg",title:"37 YEARS：永不忘记，永不放弃",title_en:"37 YEARS: Never Forget, Never Give Up",loc:"443 Shatto Pl, Los Angeles, CA 90020",desc:"铭记1989年6月4日，为言说的权利、为未竟的自由继续发声。",desc_en:"Remember June 4, 1989, and keep speaking for freedom and the right to speak.",detail:{title:"37 YEARS：永不忘记，永不放弃",title_en:"37 YEARS: Never Forget, Never Give Up",date:"2026年6月3日（星期三） / Wednesday, June 3, 2026",time:"晚上7:00 / 7:00 PM",place:"洛杉矶中国领事馆前，443 Shatto Pl, Los Angeles, CA 90020",body:"铭记1989年6月4日，为言说的权利、为未竟的自由继续发声。活动将在洛杉矶中国领事馆前举行，悼念遇难者，也提醒世界：自由不会自动到来，需要持续守护。",body_en:"Remember June 4, 1989, and continue speaking for the right to speak and the unfinished cause of freedom. The event will take place outside the Chinese Consulate in Los Angeles to mourn the victims and remind the world that freedom must be defended."}},
+  {month:"JUN",day:"04",image:"preview_june4_wall_jpg",title:"六四纪念馆壁画揭幕仪式",title_en:"June 4th Memorial Museum Mural Unveiling",loc:"June 4th Memorial Museum",desc:"让历史留在墙上，让真相被看见，让记忆代代相传。",desc_en:"Let history remain on the wall, let the truth be seen, and let memory live on.",detail:{title:"六四纪念馆壁画揭幕仪式",title_en:"June 4th Memorial Museum Mural Unveiling",date:"2026年6月4日（星期四） / Thursday, June 4, 2026",time:"下午3:00 / 3:00 PM",place:"六四纪念馆 / June 4th Memorial Museum",body:"六四纪念馆将举行壁画揭幕仪式。让历史留在墙上，让真相被看见，让记忆代代相传。铭记六四，不忘历史，捍卫自由。",body_en:"The June 4th Memorial Museum will hold a mural unveiling ceremony. Let history remain on the wall, let the truth be seen, and let memory live on. Remember June 4, never forget history, and defend freedom."}},
+  {month:"JUN",day:"06",image:"preview_ukraine_freedom_jpg",title:"捍卫自由乌克兰雕塑落成典礼",title_en:"Defend Freedom Ukraine Sculpture Dedication",loc:"Freedom Sculpture Park, Yermo, CA",desc:"自由从来都没有免费的，自由需要用血和泪去浇铸。",desc_en:"Freedom is never free; it is defended through sacrifice, courage, and memory.",detail:{title:"捍卫自由乌克兰雕塑落成典礼",title_en:"Defend Freedom Ukraine Sculpture Dedication",date:"2026年6月6日（星期六） / Saturday, June 6, 2026",time:"下午3:00 / 3:00 PM",place:"Freedom Sculpture Park, 37570 Yermo Rd, Yermo, CA 92398",body:"六四37周年、美国独立250周年之际，自由雕塑公园将举行“捍卫自由乌克兰”雕塑落成典礼。自由从不免费，需要用勇气、牺牲与记忆去守护。",body_en:"Around the 37th anniversary of June 4 and the 250th anniversary of American independence, Freedom Sculpture Park will host the Defend Freedom Ukraine sculpture dedication. Freedom is never free; it must be defended through courage, sacrifice, and memory."}}
 ];
 
 // ---- STATE ----
@@ -530,6 +558,26 @@ let currentNotif = null;
 let bannerIdx = 0;
 let bannerTimer = null;
 
+function dualText(zh, en){
+  return en ? `${zh} / ${en}` : zh;
+}
+
+function dualHtml(zh, en){
+  return en ? `${zh}<span class="en-line">${en}</span>` : zh;
+}
+
+function englishDate(dateText){
+  const m = String(dateText || '').match(/(\d{4})年(\d{1,2})月(\d{1,2})日/);
+  if(!m) return '';
+  const months = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+  return `${months[Number(m[2])-1]} ${Number(m[3])}, ${m[1]}`;
+}
+
+function dualDate(dateText){
+  const en = englishDate(dateText);
+  return en ? `${dateText} / ${en}` : dateText;
+}
+
 // ---- INIT ----
 function init(){
   renderActivityBanner();
@@ -540,7 +588,7 @@ function init(){
 
 
 function getBannerEvents(){
-  return EVENTS.filter(e => e.imgs.length).reverse();
+  return UPCOMING;
 }
 
 function renderActivityBanner(){
@@ -550,9 +598,9 @@ function renderActivityBanner(){
   const dots = document.getElementById('banner-dots');
   dots.innerHTML = events.map((_,i)=>`<button class="banner-dot" type="button" onclick="setBanner(${i})" aria-label="切换到第${i+1}项活动"></button>`).join('');
   document.getElementById('banner-open').onclick = () => {
-    const originalIdx = EVENTS.findIndex(e => e.id === events[bannerIdx].id);
-    showActDetail(originalIdx);
-    window.scrollTo({top: document.getElementById('act-detail').offsetTop - 96, behavior: 'smooth'});
+    showPage('notif');
+    showUpcomingDetail(bannerIdx);
+    window.scrollTo({top:0, behavior:'smooth'});
   };
   updateBanner();
   startBannerAuto();
@@ -564,11 +612,11 @@ function updateBanner(){
   const banner = document.querySelector('.activity-banner');
   banner.classList.add('is-changing');
   window.setTimeout(()=>banner.classList.remove('is-changing'), 360);
-  document.getElementById('banner-img').src = IMGS[e.imgs[0]] || '';
-  document.getElementById('banner-img').alt = e.title;
-  document.getElementById('banner-title').textContent = e.title;
-  document.getElementById('banner-meta').textContent = `${e.date}  ·  ${e.location}  ·  ${e.category}  ·  ${e.imgs.length}张照片`;
-  document.getElementById('banner-desc').textContent = e.desc;
+  document.getElementById('banner-img').src = IMGS[e.image] || '';
+  document.getElementById('banner-img').alt = dualText(e.title, e.title_en);
+  document.getElementById('banner-title').innerHTML = dualHtml(e.title, e.title_en);
+  document.getElementById('banner-meta').textContent = `${e.detail.date}  ·  ${e.detail.time}  ·  ${e.loc}`;
+  document.getElementById('banner-desc').innerHTML = dualHtml(e.desc, e.desc_en);
   document.querySelectorAll('.banner-dot').forEach((dot,i)=>dot.classList.toggle('active', i===bannerIdx));
 }
 
@@ -606,17 +654,18 @@ function renderActivityList(){
     const firstImg = e.imgs[0] ? IMGS[e.imgs[0]] : '';
     const imgHtml = firstImg ? `<img src="${firstImg}" alt="${e.title}" loading="lazy">` : '<div style="display:flex;align-items:center;justify-content:center;height:100%;font-size:32px">🗓</div>';
     const count = e.imgs.length;
+    const tagHtml = e.category_en ? `<span class="tag tag-blue">${dualText(e.category, e.category_en)}</span>` : (catTag[e.category]||'<span class="tag tag-blue">活动 / Event</span>');
     return `
     <div class="act-card" onclick="showActDetail(${i})">
       <div class="act-thumb">
         ${imgHtml}
-        ${count ? `<div class="act-thumb-overlay">📷 ${count}张照片</div>` : ''}
+        ${count ? `<div class="act-thumb-overlay">📷 ${count}张照片 / photos</div>` : ''}
       </div>
       <div class="act-body">
-        <div class="act-tags">${catTag[e.category]||'<span class="tag tag-blue">活动</span>'}</div>
-        <div class="act-title">${e.title}</div>
-        <div class="act-meta">📅 ${e.date} &nbsp;·&nbsp; 📍 ${e.location}</div>
-        <div class="act-desc">${e.desc}</div>
+        <div class="act-tags">${tagHtml}</div>
+        <div class="act-title">${dualHtml(e.title, e.title_en)}</div>
+        <div class="act-meta">📅 ${dualDate(e.date)} &nbsp;·&nbsp; 📍 ${dualText(e.location, e.location_en)}</div>
+        <div class="act-desc">${dualHtml(e.desc, e.desc_en)}</div>
       </div>
       <div class="act-arrow">›</div>
     </div>`;
@@ -632,11 +681,11 @@ function showActDetail(idx){
   const det = document.getElementById('act-detail');
   det.classList.add('show');
   
-  document.getElementById('d-title').textContent = currentEvent.title;
-  document.getElementById('d-date').textContent = currentEvent.date + '  ·  ' + (currentEvent.location || '');
-  document.getElementById('d-loc').textContent = currentEvent.location;
-  document.getElementById('d-cat').textContent = currentEvent.category;
-  document.getElementById('d-body').textContent = currentEvent.desc;
+  document.getElementById('d-title').innerHTML = dualHtml(currentEvent.title, currentEvent.title_en);
+  document.getElementById('d-date').textContent = dualDate(currentEvent.date);
+  document.getElementById('d-loc').textContent = dualText(currentEvent.location, currentEvent.location_en);
+  document.getElementById('d-cat').textContent = dualText(currentEvent.category, currentEvent.category_en);
+  document.getElementById('d-body').innerHTML = dualHtml(currentEvent.desc, currentEvent.desc_en);
   
   const linkWrap = document.getElementById('d-link-wrap');
   if(currentEvent.link){
@@ -714,8 +763,8 @@ function renderNotifList(){
     <div class="notif-card" onclick="showNotifDetail(${i})">
       <div class="notif-dot${n.read?' read':''}"></div>
       <div class="notif-body-flex">
-        <div class="notif-title">${n.title}</div>
-        <div class="notif-text">${n.body.substring(0,80)}…</div>
+        <div class="notif-title">${dualHtml(n.title, n.title_en)}</div>
+        <div class="notif-text">${n.body.substring(0,78)}…<span class="en-line">${(n.body_en||'').substring(0,90)}…</span></div>
         <div class="notif-time">🕐 ${n.date}</div>
       </div>
     </div>`).join('');
@@ -726,9 +775,13 @@ function renderUpcoming(){
   c.innerHTML = UPCOMING.map((u,i)=>`
     <div class="up-item" onclick="showUpcomingDetail(${i})">
       <div class="up-date"><div class="up-month">${u.month}</div><div class="up-day">${u.day}</div></div>
-      <div class="up-info">
-        <div class="up-name">${u.title}</div>
-        <div class="up-loc">📍 ${u.loc}</div>
+      <div class="up-info preview-card">
+        <img src="${IMGS[u.image]||''}" alt="${dualText(u.title,u.title_en)}" loading="lazy">
+        <div>
+          <div class="up-name">${dualHtml(u.title, u.title_en)}</div>
+          <div class="up-loc">📍 ${u.loc}</div>
+          <div class="up-body">${dualHtml(u.desc, u.desc_en)}</div>
+        </div>
       </div>
       <div class="up-arr">›</div>
     </div>`).join('');
@@ -741,10 +794,10 @@ function showNotifDetail(idx){
   det.classList.add('show');
   document.getElementById('nd-icon').textContent = n.icon;
   document.getElementById('nd-cat').textContent = n.cat;
-  document.getElementById('nd-title').textContent = n.title.replace(/^[^\s]+ /,'');
+  document.getElementById('nd-title').innerHTML = dualHtml(n.title.replace(/^[^\s]+ /,''), n.title_en);
   document.getElementById('nd-date').textContent = n.date;
   document.getElementById('nd-place').textContent = n.place;
-  document.getElementById('nd-body').textContent = n.body;
+  document.getElementById('nd-body').innerHTML = dualHtml(n.body, n.body_en);
 }
 
 function showUpcomingDetail(idx){
@@ -753,11 +806,11 @@ function showUpcomingDetail(idx){
   const det = document.getElementById('notif-detail');
   det.classList.add('show');
   document.getElementById('nd-icon').textContent = '📅';
-  document.getElementById('nd-cat').textContent = '即将举行';
-  document.getElementById('nd-title').textContent = u.title;
+  document.getElementById('nd-cat').textContent = '即将举行 / Upcoming';
+  document.getElementById('nd-title').innerHTML = dualHtml(u.title, u.title_en);
   document.getElementById('nd-date').textContent = u.date + ' · ' + u.time;
   document.getElementById('nd-place').textContent = u.place;
-  document.getElementById('nd-body').textContent = u.body;
+  document.getElementById('nd-body').innerHTML = dualHtml(u.body, u.body_en);
 }
 
 function goHome(){
@@ -792,7 +845,7 @@ function showPage(name){
 }
 
 function submitForm(){
-  alert('留言已发送！我们将在48小时内回复您。感谢您的支持！');
+  alert('留言已发送！我们将在48小时内回复您。\\nMessage sent. We will reply within 48 hours. Thank you for your support.');
 }
 
 document.addEventListener('keydown', e=>{
